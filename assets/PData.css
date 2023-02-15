@@ -1,0 +1,116 @@
+
+#header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: -20px;
+}
+
+#header br {
+    display: none;
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subject {
+    display: flex;   
+    gap: 150px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.left { 
+    display: grid;
+    place-items: center;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.left img {
+    width: 30px;
+    height: 30px;
+}
+
+.pImg {
+    height: 270px;
+    background-color: black;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.pImg img {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.right {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hireMe{
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px  0;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.assesment {
+    margin-top: -10px;
+}
+
+
+@media screen and (max-width: 400px) {
+    article,.subject {
+        display: grid;
+        place-items: center;
+        gap: 20px;
+    }
+
+    #header h1 {
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: -20px;
+    }
+
+    #header br {
+        display: block;
+    }
+
+    .right div:nth-child(1),
+    div:nth-child(3){
+        margin: auto;
+    }
+
+    .hireMe { 
+        margin: 20px auto 20px auto;
+        width: 200px;
+    }
+}

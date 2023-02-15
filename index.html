@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPortfolio</title>
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="./assets/nav.css">
+    <link rel="stylesheet" href="./assets/PData.css">
+    <link rel="stylesheet" href="./assets/about.css">
+    <link rel="stylesheet" href="./assets/skills.css">
+    <link rel="stylesheet" href="./assets/projects.css">
+</head>
+<body>
+        <div id="app">
+
+            <nav-section></nav-section>
+            <hr>
+            <data-section></data-section>
+            <hr>
+            <about-section></about-section>
+            <hr>
+            <skills-section></skills-section>
+            <hr>
+            <project-section></project-section>
+        </div>
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="./component/nav.js"></script>
+    <script src="./component/pData.js"></script>
+    <script src="./component/about.js"></script>
+    <script src="./component/skills.js"></script>
+    <script src="./component/projects.js"></script>
+    <script>
+        const mountedApp = app.mount('#app');
+    </script>
+</body>
+</html>
